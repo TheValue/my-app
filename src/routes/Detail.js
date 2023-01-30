@@ -5,8 +5,6 @@ function Detail() {
     const [detailMovie, setDetailMovie] = useState({});
     const {id} = useParams();
     
-
-    
     const getMovieDetail = async() => {
         const json = await (
             await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
